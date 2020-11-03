@@ -1,0 +1,33 @@
+body{
+    overflow-x: hidden;
+}
+
+.navBg{
+    background-color: rgba(0, 22, 67, 0.75);
+    z-index: 3;
+}
+
+.navBg a{
+    color: #fff;
+}
+
+.navBg a:hover{
+    color: #bcbcbc;
+}
+
+.navItems{
+    margin-left: 3rem;
+}
+
+.navItems a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.navItems a:hover{
+    color: #bcbcbc;
+}
+
+.activeLink{
+    font-weight: 700;
+}

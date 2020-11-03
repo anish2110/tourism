@@ -1,0 +1,65 @@
+body{
+    overflow-x: hidden;
+}
+
+.navBg{
+    background-color: rgba(0, 22, 67, 0.75);
+    z-index: 3;
+}
+
+.navBg a{
+    color: #fff;
+}
+
+.navBg a:hover{
+    color: #bcbcbc;
+}
+
+.navItems{
+    margin-left: 3rem;
+}
+
+.navItems a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.navItems a:hover{
+    color: #bcbcbc;
+}
+
+.activeLink{
+    font-weight: 700;
+}
+
+.heading{
+    text-align: center;
+    background: url('../images/destinationbg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    margin-top: -3rem;
+}
+
+.heading h1{
+    margin: 9rem 0 0 0;
+    color: #343434;
+}
+
+.rooms .row{
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.card{
+    margin: 0 auto;
+    border: none;
+}
+
+.card-title{
+    margin-top: 0.5rem;
+}
+
+.card-text{
+    margin: 1rem 0 3rem 0;
+}
