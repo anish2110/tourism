@@ -1,0 +1,93 @@
+body{
+    overflow-x: hidden;
+}
+
+.navBg{
+    background-color: rgba(0, 22, 67, 0.75);
+    z-index: 3;
+}
+
+.navBg a{
+    color: #fff;
+}
+
+.navBg a:hover{
+    color: #bcbcbc;
+}
+
+.navItems{
+    margin-left: 3rem;
+}
+
+.navItems a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.navItems a:hover{
+    color: #bcbcbc;
+}
+
+.activeLink{
+    font-weight: 700;
+}
+
+.heading{
+    text-align: center;
+    background: url('../images/destinationbg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    margin-top: -3rem;
+}
+
+.heading h1{
+    margin: 9rem 0 0 0;
+    color: #343434;
+}
+
+.contain{
+	width: 80%;
+	margin: 0 auto;
+}
+
+.contain .full-div{
+	width: 100%;
+	display: flex;
+    margin-top: 3rem;
+}
+
+.contain .image-div{
+	width: 35%;
+}
+
+.contain .image-div img{
+	width: 100%;
+/*	padding-top: 28px;*/
+}
+
+.contain .para-content{
+	width: 65%;
+	padding: 0 0 30px 20px;
+	font-size: .88em;
+	text-align: justify;
+}
+
+.contain .para-content h3{
+	font-weight: bolder;
+	color: #27bcad;
+	font-size: 22px;
+	padding: 0;
+}
+
+.contain .para-content .para-content-link{
+	padding: 5px 10px;
+	border: 2px solid orange;
+	transition: .2s linear;
+}
+
+.contain .para-content .para-content-link:hover{
+	text-decoration: none;
+	background-color: orange;
+	color: #000;
+}

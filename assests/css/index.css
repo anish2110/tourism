@@ -28,12 +28,17 @@ body{
     color: #bcbcbc;
 }
 
+.activeLink{
+    font-weight: 700;
+}
+
 .bgImg{
     height: 101vh;
     width: 100vw;
     margin-top: -4rem;
     filter: blur(4px);
     z-index: -1;
+    background-size: auto;
 }
 
 .header{
@@ -68,7 +73,7 @@ body{
 }
 
 .bgVector{
-    background: url('assests/images/6627938.png');
+    background: url('../images/6627938.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -76,7 +81,7 @@ body{
 .top-attractions{
 	width: 100%;
 	height: auto;
-	background: url(assests/images/image10.jpg);
+	background: url('../images/image10.jpg');
 	background-position: center center;
 	background-attachment: fixed;
 }
@@ -199,11 +204,7 @@ body{
     background: url(assests/images/6627938.png);
     background-size: contain;
     background-repeat: no-repeat;
-}
-
-#accomodation-title{
-    text-align: right;
-    margin: 3rem 0;
+    margin: 5rem 0 0 0;
 }
 
 #slider{
@@ -256,3 +257,45 @@ body{
 	}
 }
 
+#accomodation-title{
+    margin-top: -5rem;
+}
+
+#list{
+    padding-left: 5rem;
+}
+
+.buttons{
+    display: grid;
+    margin-top: 4rem;
+}
+
+.buttons button{
+    margin-bottom: 3rem;
+    height: 45px;
+    border: none;
+    transition: transform 0.5s;
+}
+
+.buttons button:hover{
+    background-color: #434343;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+/* Footer */
+.footer{
+    background: rgb(31,107,0);
+    background: linear-gradient(0deg, rgba(31,107,0,1) 0%, rgba(255,255,255,1) 84%);
+    margin-top: 5rem;
+}
+
+#guide{
+    padding-left: 5rem;
+}
+
+#guide hr, #contact hr, #about hr{
+    border-top: 5px solid #e5e5e5;
+    margin: 0 6rem 0 0;   
+    background-color:  color: #fff;
+}

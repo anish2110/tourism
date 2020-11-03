@@ -3,21 +3,21 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="assests/css/index.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Tourism</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navBg">
-        <a class="navbar-brand" href="#">Alwar Tourism</a>
+        <a class="navbar-brand" href="index.html"><span class="activeLink">Alwar Tourism</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active navItems">
-                    <a class="nav-link" href="#">Destinations </a>
+                    <a class="nav-link" href="destination.html">Destinations </a>
                 </li>
                 <li class="nav-item active navItems">
                     <a class="nav-link" href="#">Activites</a>
@@ -89,30 +89,53 @@
         </div>
     </section>
 
-    <div class="bg py-5">
+    <div class="bg py-5 accomodation">
         <div class="container">
-           <div id="accomodation-title">
-               <h1>Accomodations</h1>
-           </div>
             <div class="row">
                 <div class="col-6">
                     <div class="tourism-news-carousal-div">
                         <div id="slider">
                             <figure>
                                 <img src="assests/images/amanbagh.jpg">
-                                <img src="assests/images/neemranafort.jpg">
+                                <img src="assests/images/neemranafort.webp">
                                 <img src="assests/images/lemon-tree.jpg">
                                 <img src="assests/images/lemonade.webp">
                             </figure>
                         </div>
                     </div>
                 </div>
+                <div class="col-6" id="list">
+                    <div id="accomodation-title">
+                        <h1>Accomodations</h1>
+                    </div>
+                    <div class="buttons">
+                        <button>Aman Bagh Palace</button>
+                        <button>Neemrana Fort Palace</button>
+                        <button>Lemon Tree Hotel</button>
+                        <button>Lemonade Hotel</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-    
-    
+    <div class="bg py-5 footer">
+        <div class="row py-5">
+            <div class="col-4" id="guide">
+                <h2>Tour and Guides</h2>
+                <hr>
+            </div>
+            <div class="col-4" id="about">
+                <h2>About</h2>
+                <hr>
+            </div>
+            <div class="col-4" id="contact">
+                <h2>Contact Us</h2>
+                <hr>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
