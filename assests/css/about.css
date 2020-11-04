@@ -32,3 +32,16 @@ body{
     font-weight: 700;
 }
 
+.heading{
+    text-align: center;
+    background: url('../images/destinationbg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    margin-top: -3rem;
+}
+
+.heading h1{
+    margin: 9rem 0 0 0;
+    color: #343434;
+}
