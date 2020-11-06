@@ -6,6 +6,7 @@
     <title>Accomodation</title>
     <link rel="stylesheet" type="text/css" href="assests/css/accomodation.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="assests/js/accomodation.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -48,7 +49,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Hotel</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Book Now!</a>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Book Now!</button>
                         </div>
                     </div>
                 </div>
@@ -58,7 +59,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Resorts</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Book Now!</a>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Book Now!</button>
                         </div>
                     </div>
                 </div>
@@ -70,7 +71,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Haveli/Forts</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Book Now!</a>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Book Now!</button>
                         </div>
                     </div>
                 </div>
@@ -80,7 +81,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Rent House</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Book Now!</a>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Book Now!</button>
                         </div>
                     </div>
                 </div>
@@ -88,6 +89,64 @@
         </div>
     </div>
 
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Fill the Details</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form onsubmit="return validate()" method="get">
+                <div class="modal-body">
+                    
+                        <label for="fname">First name:</label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        
+                        <label for="lname">Last name:</label>
+                        <input type="text" id="lname" name="lname" value=""><br><br>
+                        
+                        <label for="number">Mobile:</label>
+                        <input type="number" id="mobile" name="number" value=""><br><br>
+                        
+                        <label>Room Type:</label><br>
+                        <input type="radio" id="suite" name="room-type" value="suite" checked>
+                        <label for="suite">Apartment Suite</label><br>
+                        <input type="radio" id="single" name="room-type" value="single">
+                        <label for="single">Single Bed</label><br>
+                        <input type="radio" id="double" name="room-type" value="double">
+                        <label for="double">Double Bed</label><br><br>
+                        
+                        
+                        <label for="room-number">Number of Rooms:</label>
+                        <input type="number" id="room-number" name="room-number" value=""><br><br>
+                        
+                        <label for="check-in">Check In:</label>
+                        <input type="date" id="check-in" name="check-in"><br><br>
+                        
+                        <label for="check-out">Check Out:</label>
+                        <input type="date" id="check-out" name="check-out"><br><br>
+                        
+                        <label for="price">Price:</label>
+                        <input type="number" id="price" name="price" value="0" disabled>
+                        <button class="btn btn-success btn-sm" id="price-calculator" onclick="calculatePrice()">Calculate</button>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <input class="btn btn-primary" type="submit" value="Submit">
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 </body>
 
 </html>
