@@ -34,7 +34,7 @@ body{
 
 .heading{
     text-align: center;
-    background: url('../images/destinationbg.jpg');
+    background: url('../images/accomodationbg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 70vh;
@@ -42,8 +42,14 @@ body{
 }
 
 .heading h1{
+    font-size: 50px;
     margin: 9rem 0 0 0;
-    color: #343434;
+    color: #fff;
+}
+
+.heading p{
+    color: aliceblue;
+    font-weight: 700;
 }
 
 .rooms .row{
@@ -62,4 +68,16 @@ body{
 
 .card-text{
     margin: 1rem 0 3rem 0;
+}
+
+/* Footer */
+.footer{
+    background: linear-gradient(to right, #1e5799 0%,#2989d8 50%,#207cca 100%,#7db9e8 100%);
+    text-align: center;
+    height: 5rem;
+}
+
+.footer .col-4{
+    margin-top: 1.8rem;
+    color: aliceblue;
 }

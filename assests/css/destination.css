@@ -54,7 +54,7 @@ body{
 .contain .full-div{
 	width: 100%;
 	display: flex;
-    margin-top: 3rem;
+    margin-top: 5rem;
 }
 
 .contain .image-div{
@@ -90,4 +90,20 @@ body{
 	text-decoration: none;
 	background-color: orange;
 	color: #000;
+}
+
+#sariska-p, #siliserh-p, #bhangarh-p, #bala-quila{
+    display: none;
+}
+
+/* Footer */
+.footer{
+    background: linear-gradient(to right, #1e5799 0%,#2989d8 50%,#207cca 100%,#7db9e8 100%);
+    text-align: center;
+    height: 5rem;
+}
+
+.footer .col-4{
+    margin-top: 1.8rem;
+    color: aliceblue;
 }
